@@ -6,4 +6,6 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "application.py"]
+WORKDIR ..
+
+CMD ["python", "app/application.py"]
