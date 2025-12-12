@@ -10,10 +10,12 @@
 
 Для определения языка текста была использована библиотека langdetect, т.к. удобна в использовании и не требует похода во внешние API.
 
-Сам результат для каждого файла записывается в Google Sheets при использовании gspread-asyncio (json с credentials необходимо положить в app/services).
+Сам результат для каждого файла записывается в Google Sheets при использовании gspread-asyncio.
 
 Сохраняются name, size, type, language, timestamp, uploader, summary и keywords.
 https://docs.google.com/spreadsheets/d/1FWCSV6riSNbNKpDuRT67mBvdhsXk_R5VtGbnThf6P58/edit?usp=sharing
+
+TELEGRAM_BOT_TOKEN, OPENAI_API_KEY, SPREADSHEET_ID и N8N_WEBHOOK_URL хранятся в виде переменных окружения. Json с credentials для Google Cloud API необходимо положить в app/services.
 
 # Сложности
 
